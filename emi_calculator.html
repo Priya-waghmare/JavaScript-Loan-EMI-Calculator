@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMI CALCULATOR</title>
+    <style>
+       
+        body{background-color: whitesmoke;}
+        .bg{background-color:rgb(62, 217, 127, 0.825); height: auto ;
+            width:450px;text-align: center; margin-left: 480px; margin-top: 105px; padding: 30px;}
+        input{height: 30px; width: 220px;}
+        button{background-color: rgba(235, 65, 22, 0.973); height: 35px; width: 120px; border: solid black 1.7px ;}
+        h1{color: rgba(235, 65, 22, 0.973); text-align: center;}
+        h2{color:black;
+        /* color:rgba(235, 65, 22, 0.973) */
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="bg">
+        <h1>EMI CALCULATOR</h1>
+        <div>
+        <label for=""> <b> Loan Amount: </b></label>
+        <input type="text" id="amount" placeholder="Loan Amount"></div><br>
+        <div>
+        <label for=""> <b> Rate of Interest: </b></label>
+        <input type="text" id="interest" placeholder="Interest Rate(%P.A.)"></div><br>
+        <div>
+        <label for=""><b>Tenure: </b></label>
+        <input type="text" id="duration" placeholder="Duration or Tenure(In Months)"></div><br>
+        <button onclick="loan()"> <b>CALCULATE</b></button>
+        <h2 id="emi_val"></h2>
+        <h2 id="print"></h2>
+        <h2 id="tot_amt"></h2>
+    </div>
+    <script src="../javascript/emi_calculator.js"></script>
+</body>
+</html>
